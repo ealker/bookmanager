@@ -24,6 +24,6 @@ public class BookController {
 
     @GetMapping(API_VERSION + "books/{id}")
     public Book getBook(@PathVariable String id){
-        BookService
+        return bookService.getTestBook();
     }
 }
