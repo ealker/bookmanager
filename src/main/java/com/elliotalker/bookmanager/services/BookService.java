@@ -13,18 +13,16 @@ public class BookService {
     }
 
     public Book getTestBook() {
-        Book testBook = new Book(1,"My Test Book");
+        Book testBook = new Book(1, "James Authorsmith", "My Test Book");
         return testBook;
     }
 
     public ArrayList<Book> getAllBooks() {
-        Book testBook = new Book(1,"My Test Book");
-        Book testBook2 = new Book(2, "Anohter Book");
+        Book testBook = new Book(1, "James Authorsmith","My Test Book");
+        Book testBook2 = new Book(2, "Another Book");
         ArrayList<Book> bookArray = new ArrayList<>();
         bookArray.add(testBook);
         bookArray.add(testBook2);
         return bookArray;
     }
-
-
 }
